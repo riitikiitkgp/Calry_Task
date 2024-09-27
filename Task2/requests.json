@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cbe0a520-90d8-46dd-81d6-6385d80f64ac",
+    "guestName": "Dikshant",
+    "roomNumber": 104,
+    "requestDetails": "Clean Me",
+    "priority": 2,
+    "status": "received"
+  },
+  {
+    "id": "7f8e9d2a-b3c1-4e5f-a6b7-8c9d0e1f2a3b",
+    "guestName": "Priya Sharma",
+    "roomNumber": 203,
+    "requestDetails": "Extra pillows needed",
+    "priority": 2,
+    "status": "received"
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6",
+    "guestName": "Rajesh Patel",
+    "roomNumber": 305,
+    "requestDetails": "Request for late checkout",
+    "priority": 3,
+    "status": "in progress"
+  },
+  {
+    "id": "q7r8s9t0-u1v2-w3x4-y5z6-a7b8c9d0e1f2",
+    "guestName": "Ananya Gupta",
+    "roomNumber": 401,
+    "requestDetails": "Room service - vegetarian dinner",
+    "priority": 1,
+    "status": "received"
+  },
+  {
+    "id": "g3h4i5j6-k7l8-m9n0-p1q2-r3s4t5u6v7w8",
+    "guestName": "Vikram Singh",
+    "roomNumber": 502,
+    "requestDetails": "Maintenance - AC not working",
+    "priority": 1,
+    "status": "in progress"
+  },
+  {
+    "id": "n5o6p7q8-r9s0-t1u2-v3w4-x5y6z7a8b9c0",
+    "guestName": "Arjun Nair",
+    "roomNumber": 601,
+    "requestDetails": "Wake-up call for 6:30 AM",
+    "priority": 3,
+    "status": "received"
+  }
+]
