@@ -69,9 +69,9 @@ def get_all_requests():
     }
 
     def sort_key(x):
+        priority = x.get('priority', 999)
         status = x.get('status', 'unknown')
-        priority = x.get('priority', 'unknown')
-        return (status_order.get(status, 999), status_order.get(priority, 999))
+        return (priority, status_order.get(status, 999))
 
     sorted_requests = sorted(requests, key=sort_key)
     return jsonify(sorted_requests)
