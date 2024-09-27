@@ -53,6 +53,8 @@ def create_request():
     write_requests(requests)
     return jsonify(new_request), 201
 
+
+# Sorting data based on priority first and then on status !
 @app.route('/requests', methods=['GET'])
 @error_handler
 def get_all_requests():
@@ -66,7 +68,12 @@ def get_all_requests():
         'canceled': 4
     }
 
-    sorted_requests = sorted(requests, key=lambda x: (x['priority'], status_order[x['status']]))
+    def sort_key(x):
+        status = x.get('status', 'unknown')
+        priority = x.get('priority', 'unknown')
+        return (status_order.get(status, 999), status_order.get(priority, 999))
+
+    sorted_requests = sorted(requests, key=sort_key)
     return jsonify(sorted_requests)
 
 
@@ -97,7 +104,7 @@ def delete_request(request_id):
     requests = read_requests()
     requests = [req for req in requests if req['id'] != request_id]
     write_requests(requests)
-    return '', 204
+    return 'Deleted successfully !', 200
 
 @app.route('/requests/<string:request_id>/complete', methods=['POST'])
 @error_handler
