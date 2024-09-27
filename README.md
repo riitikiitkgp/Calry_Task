@@ -40,6 +40,8 @@ Optimized bookings: [9, 13] [14, 18]
 This program efficiently manages meeting schedules by merging overlapping bookings, making it ideal for busy workspaces.
 
 
+
+
 # Task2 : Hotel Room Service Request API (No Database, No Auth)
 
 ## Overview
