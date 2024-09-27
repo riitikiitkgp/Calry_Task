@@ -127,5 +127,3 @@ curl -X POST http://127.0.0.1:5000/requests \
 -d '{"guestName": "John Doe", "roomNumber": 101, "requestDetails": "Extra towels", "priority": 1}'
 ```
 
-## License
-This project is open-source and available under the MIT License.
