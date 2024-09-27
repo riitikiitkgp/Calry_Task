@@ -1,6 +1,6 @@
 # Calry_Task
 
-1. # Meeting Scheduler
+# Task1 : Meeting Scheduler
 
 ## Overview
 The **Meeting Scheduler** optimizes meeting room bookings by merging overlapping or consecutive time slots, ensuring efficient use of resources.
